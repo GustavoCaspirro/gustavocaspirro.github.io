@@ -1,0 +1,34 @@
+{
+  "name": "Gustavo Caspirro - UI/UX DESIGNER & FRONT-END DEVELOPER",
+  "short_name": "Gustavo Caspirro",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "description": "UI/UX DESIGNER & FRONT-END DEVELOPER",
+  "theme_color": "#01c853",
+  "icons": [{
+    "src": "img/favicon/favicon-32x32.png",
+    "sizes": "32x32",
+    "type": "image/png"
+  }, {
+    "src": "img/favicon/apple-icon-57x57.png",
+    "sizes": "57x57",
+    "type": "image/png"
+  }, {
+    "src": "img/favicon/apple-icon-72x72.png",
+    "sizes": "72x72",
+    "type": "image/png"
+  }, {
+    "src": "img/favicon/apple-icon-144x144.png",
+    "sizes": "144x144",
+    "type": "image/png"
+  }, {
+    "src": "img/favicon/apple-icon-180x180.png",
+    "sizes": "180x180",
+    "type": "image/png"
+  }, {
+    "src": "img/favicon/android-icon-192x192.png",
+    "sizes": "192x192",
+    "type": "image/png"
+  }]
+}
