@@ -1,8 +1,9 @@
 {
   "name": "Gustavo Caspirro - UI/UX DESIGNER & FRONT-END DEVELOPER",
-  "short_name": "Gustavo Caspirro",
+  "short_name": "GustavoCaspirro",
   "start_url": "https://gustavocaspirro.github.io/",
-  "display": "standalone",
+  "display": "fullscreen",
+  "orientation": "natural",
   "background_color": "#ffffff",
   "description": "UI/UX DESIGNER & FRONT-END DEVELOPER",
   "theme_color": "#01c853",
