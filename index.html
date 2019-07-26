@@ -87,7 +87,7 @@
 							<span class="candidate-name block mb-10 text-center">Gustavo Caspirro</span>
 							<ul class="social-icons  mb-30">
 								<li>
-									<a class="facebook-link" href="https://www.facebook.com/caspirrodesigner/" target="_blank">
+									<a class="facebook-link" href="https://www.facebook.com/caspirrodesigner/" target="_blank" onclick="closeMenu();">
 										<i id="tt1" class="zmdi zmdi-facebook"></i>
 										<div class="mdl-tooltip" data-mdl-for="tt1">
 											facebook
@@ -95,18 +95,10 @@
 									</a>
 								</li>
 								<li>
-									<a class="linkedin-link" href="https://www.linkedin.com/in/gustavocaspirro/" target="_blank">
+									<a class="linkedin-link" href="https://www.linkedin.com/in/gustavocaspirro/" target="_blank" onclick="closeMenu();">
 										<i id="tt3" class="zmdi zmdi-linkedin"></i>
 										<div class="mdl-tooltip" data-mdl-for="tt3">
 											linkedin
-										</div>
-									</a>
-								</li>
-								<li>
-									<a class="instagram-link" href="https://www.instagram.com/gustavocaspirro/" target="_blank">
-										<i id="tt5" class="zmdi zmdi-instagram"></i>
-										<div class="mdl-tooltip" data-mdl-for="tt5">
-											instagram
 										</div>
 									</a>
 								</li>
@@ -115,39 +107,36 @@
 						<div class="mdl-scroll-spy-2">
 							<ul class="mdl-navigation">
 								<li>
-									<a class="mdl-navigation__link border-top-sep" data-scroll href="#body">
+									<a class="mdl-navigation__link border-top-sep" data-scroll href="#body" onclick="closeMenu();">
 										<i class="zmdi zmdi-border-color pr-15"></i>
 										<span class="font-capitalize">Sobre</span>
 									</a>
 								</li>
 								<li>
-									<a class="mdl-navigation__link border-top-sep" data-scroll href="#skills_sec">
+									<a class="mdl-navigation__link border-top-sep" data-scroll href="#skills_sec" onclick="closeMenu();">
 										<i class="zmdi zmdi-wrench pr-15"></i>
 										<span class="font-capitalize">skills</span>
 									</a>
 								</li>
 								<li>
-									<a class="mdl-navigation__link border-top-sep" data-scroll href="#profile_sec">
+									<a class="mdl-navigation__link border-top-sep" data-scroll href="#profile_sec" onclick="closeMenu();">
 										<i class="zmdi zmdi-code-setting pr-15"></i>
 										<span class="font-capitalize">Técnicas</span>
 									</a>
 								</li>
 								<li>
-									<a class="mdl-navigation__link border-top-sep" data-scroll href="#experience_sec">
+									<a class="mdl-navigation__link border-top-sep" data-scroll href="#experience_sec" onclick="closeMenu();">
 										<i class="zmdi zmdi-shield-check pr-15"></i>
 										<span class="font-capitalize">Experiência</span>
 									</a>
 								</li>
 								<li>
-									<a class="mdl-navigation__link border-top-sep" data-scroll href="#education_sec">
+									<a class="mdl-navigation__link border-top-sep" data-scroll href="#education_sec" onclick="closeMenu();">
 										<i class="zmdi zmdi-library pr-15"></i>
 										<span class="font-capitalize">Educação</span>
 									</a>
 								</li>
 							</ul>
-						</div>
-						<div class="drawer-footer mt-50 mb-30 text-center">
-							<p class="font-12 mt-10">Gustavo Caspirro 2018. &copy; Todos direitos reservados.</p>
 						</div>
 					</div>
 				</div>
@@ -179,14 +168,6 @@
 															<i id="tt3" class="zmdi zmdi-linkedin"></i>
 															<div class="mdl-tooltip" data-mdl-for="tt3">
 																linkedin
-															</div>
-														</a>
-													</li>
-													<li>
-														<a class="instagram-link" href="https://www.instagram.com/gustavocaspirro/" target="_blank">
-															<i id="tt5" class="zmdi zmdi-instagram"></i>
-															<div class="mdl-tooltip" data-mdl-for="tt5">
-																instagram
 															</div>
 														</a>
 													</li>
@@ -675,6 +656,19 @@
 			</div>
 		</div>
 		<!--/Main Wrapper-->
+
+		<script>
+			function closeMenu() {
+				var visibleMenu = document.querySelectorAll('.is-visible');
+
+				if (visibleMenu) {
+					visibleMenu.forEach(function(el) {
+						el.classList.remove("is-visible")
+					});
+					// visibleMenu.classList.remove('is-visible');
+				}
+			}
+		</script>
 
 		<!-- Scripts -->
 		<script src="js/jquery-1.12.4.min.js"></script>
