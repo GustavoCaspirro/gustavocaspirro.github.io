@@ -184,7 +184,7 @@
 												<ul class="profile-wrap mt-50">
 													<li>
 														<div class="profile-title">Idade</div>
-														<div class="profile-desc">25</div>
+														<div class="profile-desc"></div>
 													</li>
 													<li>
 														<div class="profile-title">E-mail</div>
@@ -615,7 +615,6 @@
 								<span id="year">
 									<script>
 										var d = new Date().getFullYear();
-										//var n = d.getFullYear();
 										document.getElementById("year").innerHTML = d;
 									</script>
 								</span>. &copy; Todos direitos reservados.</p>
@@ -665,9 +664,29 @@
 					visibleMenu.forEach(function(el) {
 						el.classList.remove("is-visible")
 					});
-					// visibleMenu.classList.remove('is-visible');
 				}
 			}
+			
+			idade(1994, 06, 18);
+			
+			function idade(anoNascimento, mesNascimento, diaNascimento) {
+				var d = new Date, anoAtual = d.getFullYear(), mesAtual = d.getMonth() + 1, diaAtual = d.getDate(),
+
+				anoNascimento = +anoNascimento,
+				mesNascimento = +mesNascimento,
+				diaNascimento = +diaNascimento,
+
+				quantosAnos = anoAtual - anoNascimento;
+
+				if (mesAtual < mesNascimento || mesAtual == mesNascimento && diaAtual < diaNascimento) {
+					quantosAnos--;
+				}
+
+				quantosAnos < 0 ? 0 : quantosAnos;
+				
+				document.querySelector('.profile-desc').innerHTML = quantosAnos;
+			}
+			
 		</script>
 
 		<!-- Scripts -->
